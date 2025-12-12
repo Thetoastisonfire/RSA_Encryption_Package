@@ -1,0 +1,61 @@
+----------------------------------------
+----------  SETUP --------------------
+----------------------------------------
+
+To run the thing:
+
+
+1. Run the Perl installer (its a programming language thing)
+
+2. download 'make' because its needed to do more programming things
+
+    SAFE link I think!!! https://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81.exe/download?use_mirror=netactuate&download
+
+
+3. copy the path of the file you're in, it should start with C:\ and end with "RSA_Encryption_Package\openssl-3.6.0"
+
+    Example: C:\Users\!!!!!!YOUR_USER_NAME!!!!!!!!!!\Downloads\RSA_Encryption_Package\openssl-3.6.0
+
+
+4. press the windows key and the R key, type "cmd" and press enter
+
+5. in the cmd tab, type "cd " and then paste the file path you copied earlier, then press enter
+
+6. type "perl ./Configure"
+
+7. if something like this (pictured below) does not show up, pls watch a video and get help, I am sorry.
+"
+**********************************************************************
+***                                                                ***
+***   OpenSSL has been successfully configured                     ***
+***                                                                ***
+***   If you encounter a problem while building, please open an    ***
+***   issue on GitHub <https://github.com/openssl/openssl/issues>  ***
+***   and include the output from the following command:           ***
+***                                                                ***
+***       perl configdata.pm --dump                                ***
+***                                                                ***
+***   (If you are new to OpenSSL, you might want to consult the    ***
+***   'Troubleshooting' section in the INSTALL.md file first)      ***
+***                                                                ***
+**********************************************************************     "
+
+
+----------------------------------------
+----------  USAGE --------------------
+----------------------------------------
+
+8. If that hopefully worked, you can now click the 'Generate_Keys' BAT file in RSA_Encryption_Package to encrypt text!!
+
+    It will output a file called 'public.pem' and you can send that to people so they can encrypt messages to send to you.
+
+
+9. To encrypt a message using someone's (or your own) public key, place their key in "encrypted_output" and click the "encrypt_Message" BAT file!
+
+    This will output a file called 'data.txt.enc' and you can send that to your buddy for them to decrypt!
+
+10. To decrypt a message made with YOUR public key, using your own private key (YOU CANNOT DECRYPT A MESSAGE MADE WITH SOMEONE ELSE'S PUBLIC KEY), 
+
+    move their message to the "encrypted_output" folder, and then
+    
+    click the 'decrypt' BAT file, and enter the name of the file! e.g. "data" for a file named "data.txt.enc"
